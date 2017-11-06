@@ -143,7 +143,7 @@ module.exports = {
     "no-sync": "off",
 
     // Stylistic issues
-    camelcase: "error",
+    camelcase: "off",
     "capitalized-comments": [
       "error",
       "always",
