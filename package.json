@@ -13,14 +13,13 @@
   "scripts": {
     "precommit": "npm run test && lint-staged",
     "test": "npm run conflicting-rules && npm run unused-rules",
-    "conflicting-rules": "eslint --print-config .eslintrc | eslint-config-prettier-check",
+    "conflicting-rules":
+      "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "unused-rules": "eslint-find-rules --unused ./index.js"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "dependencies": {
     "eslint-config-prettier": "^2.7.0"
