@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ccrazy88",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A personalized, shareable ESLint configuration.",
   "homepage": "https://github.com/ccrazy88/eslint-config-ccrazy88",
   "license": "MIT",
