@@ -85,7 +85,15 @@ module.exports = {
     "no-new-wrappers": "error",
     "no-octal": "error",
     "no-octal-escape": "error",
-    "no-param-reassign": ["error", { props: true }],
+    "no-param-reassign": [
+      "error",
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          "ctx" // Koa routing
+        ]
+      }
+    ],
     "no-proto": "error",
     "no-redeclare": "error",
     "no-restricted-properties": "off",
