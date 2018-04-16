@@ -238,7 +238,7 @@ module.exports = {
     "import/no-internal-modules": "off",
     "import/no-webpack-loader-syntax": "error",
     "import/no-self-import": "error",
-    "import/no-cycle": "error",
+    "import/no-cycle": ["error", { maxDepth: Infinity }],
     "import/no-useless-path-segments": "error",
 
     // Import -> Helpful warnings
