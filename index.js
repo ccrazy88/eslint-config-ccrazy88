@@ -237,6 +237,9 @@ module.exports = {
     "import/no-dynamic-require": "error",
     "import/no-internal-modules": "off",
     "import/no-webpack-loader-syntax": "error",
+    "import/no-self-import": "error",
+    "import/no-cycle": "error",
+    "import/no-useless-path-segments": "error",
 
     // Import -> Helpful warnings
     "import/export": "error",
@@ -264,7 +267,9 @@ module.exports = {
     "import/max-dependencies": "off",
     "import/no-unassigned-import": "off",
     "import/no-named-default": "error",
+    "import/no-default-export": "off",
     "import/no-anonymous-default-export": "error",
+    "import/group-exports": "off",
 
     // Prettier
     "prettier/prettier": "error"
