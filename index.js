@@ -1,10 +1,9 @@
 module.exports = {
   extends: ["prettier"],
   parserOptions: {
-    ecmaVersion: 2017,
+    ecmaVersion: 2018,
     sourceType: "module",
     ecmaFeatures: {
-      experimentalObjectRestSpread: true,
       impliedStrict: true,
       jsx: true
     }
@@ -167,8 +166,10 @@ module.exports = {
     "line-comment-position": "off",
     "linebreak-style": "error",
     "lines-between-class-members": "error",
+    "max-classes-per-file": "off",
     "max-depth": "off",
     "max-lines": "off",
+    "max-lines-per-function": "off",
     "max-nested-callbacks": "off",
     "max-params": "off",
     "max-statements": "off",
@@ -176,10 +177,12 @@ module.exports = {
     "multiline-comment-style": "off",
     "new-cap": "error",
     "no-array-constructor": "error",
+    "no-async-promise-executor": "error",
     "no-bitwise": "error",
     "no-continue": "error",
     "no-inline-comments": "off",
     "no-lonely-if": "error",
+    "no-misleading-character-class": "error",
     "no-multi-assign": "error",
     "no-negated-condition": "off",
     "no-nested-ternary": "error",
@@ -220,9 +223,12 @@ module.exports = {
     "prefer-const": "error",
     "prefer-destructuring": "error",
     "prefer-numeric-literals": "error",
+    "prefer-object-spread": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
+    "require-atomic-updates": "error",
+    "require-unicode-regexp": "off",
     "require-yield": "error",
     "sort-imports": "off", // Use import/order instead.
     "symbol-description": "error",
@@ -240,6 +246,7 @@ module.exports = {
     "import/no-self-import": "error",
     "import/no-cycle": "error",
     "import/no-useless-path-segments": "error",
+    "import/no-relative-parent-imports": "off",
 
     // Import -> Helpful warnings
     "import/export": "error",
@@ -270,6 +277,7 @@ module.exports = {
     "import/no-default-export": "off",
     "import/no-anonymous-default-export": "error",
     "import/group-exports": "off",
+    "import/dynamic-import-chunkname": "off",
 
     // Prettier
     "prettier/prettier": "error"
