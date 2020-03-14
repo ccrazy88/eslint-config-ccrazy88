@@ -11,32 +11,30 @@
     "url": "https://github.com/ccrazy88/eslint-config-ccrazy88.git"
   },
   "scripts": {
-    "precommit": "npm run test && lint-staged",
     "test": "npm run conflicting-rules && npm run unused-rules",
     "conflicting-rules": "eslint --print-config .eslintrc | eslint-config-prettier-check",
     "unused-rules": "eslint-find-rules --unused ./index.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && lint-staged"
+    }
+  },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": "eslint --fix",
+    "*.json": "prettier --write"
   },
   "dependencies": {
-    "eslint-config-prettier": "^6.1.0"
+    "eslint-config-prettier": "^6.10.0"
   },
   "devDependencies": {
-    "eslint": "^6.2.2",
+    "eslint": "^6.8.0",
     "eslint-find-rules": "^3.4.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^3.0.4",
-    "lint-staged": "^9.2.4",
-    "prettier": "^1.18.2"
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1"
   },
   "peerDependencies": {
     "eslint": "6.x",
