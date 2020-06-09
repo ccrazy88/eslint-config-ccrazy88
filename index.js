@@ -6,8 +6,8 @@ module.exports = {
     sourceType: "module",
     ecmaFeatures: {
       impliedStrict: true,
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   plugins: ["import", "prettier"],
   rules: {
@@ -37,6 +37,7 @@ module.exports = {
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
+    "no-loss-of-precision": "error",
     "no-misleading-character-class": "error",
     "no-obj-calls": "error",
     "no-prototype-builtins": "error",
@@ -48,6 +49,7 @@ module.exports = {
     "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
+    "no-useless-backreference": "error",
     "require-atomic-updates": "error",
     "use-isnan": "error",
     "valid-typeof": "error",
@@ -61,6 +63,7 @@ module.exports = {
     "consistent-return": "error",
     curly: "error",
     "default-case": "error",
+    "default-case-last": "error",
     "default-param-last": "error",
     "dot-location": "off",
     "dot-notation": "error",
@@ -105,9 +108,9 @@ module.exports = {
       {
         props: true,
         ignorePropertyModificationsFor: [
-          "ctx" // Koa routing
-        ]
-      }
+          "ctx", // Koa routing
+        ],
+      },
     ],
     "no-proto": "error",
     "no-redeclare": "error",
@@ -178,7 +181,7 @@ module.exports = {
     "capitalized-comments": [
       "error",
       "always",
-      { ignoreConsecutiveComments: true }
+      { ignoreConsecutiveComments: true },
     ],
     "comma-dangle": "off",
     "comma-spacing": "off",
@@ -279,6 +282,7 @@ module.exports = {
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "off", // Use import/no-duplicates instead.
     "no-new-symbol": "error",
+    "no-restricted-exports": "off",
     "no-restricted-imports": "off",
     "no-this-before-super": "error",
     "no-useless-computed-key": "error",
@@ -324,7 +328,7 @@ module.exports = {
     "import/no-mutable-exports": "error",
     "import/no-unused-modules": [
       "error",
-      { missingExports: true, unusedExports: true }
+      { missingExports: true, unusedExports: true },
     ],
 
     // Import -> Module systems
@@ -352,6 +356,6 @@ module.exports = {
     "import/dynamic-import-chunkname": "off",
 
     // Prettier
-    "prettier/prettier": "error"
-  }
+    "prettier/prettier": "error",
+  },
 };
