@@ -196,7 +196,7 @@ module.exports = {
     "func-names": "warn",
     "func-style": "error",
     "function-paren-newline": "off",
-    "id-blacklist": "off",
+    "id-denylist": "off",
     "id-length": "off",
     "id-match": "off",
     "implicit-arrow-linebreak": "off",
