@@ -322,6 +322,7 @@ module.exports = {
     "import/no-cycle": "error",
     "import/no-useless-path-segments": "error",
     "import/no-relative-parent-imports": "off",
+    "import/no-relative-packages": "error",
 
     // Import -> Helpful warnings
     "import/export": "error",
@@ -340,6 +341,7 @@ module.exports = {
     "import/no-commonjs": "off",
     "import/no-amd": "error",
     "import/no-nodejs-modules": "off",
+    "import/no-import-module-exports": "error",
 
     // Import -> Style guide
     "import/first": "error",
