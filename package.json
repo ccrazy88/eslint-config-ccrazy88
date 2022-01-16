@@ -40,7 +40,6 @@
     "eslint": "8.x",
     "eslint-import-resolver-typescript": "2.x",
     "eslint-plugin-import": "2.x",
-    "eslint-plugin-prettier": "4.x",
-    "typescript": "4.x"
+    "eslint-plugin-prettier": "4.x"
   }
 }
