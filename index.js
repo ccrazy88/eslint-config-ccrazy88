@@ -366,4 +366,14 @@ module.exports = {
     // Prettier
     "prettier/prettier": "error",
   },
+  settings: {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 };
