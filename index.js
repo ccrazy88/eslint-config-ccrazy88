@@ -284,6 +284,7 @@ module.exports = {
     "no-class-assign": "error",
     "no-confusing-arrow": "off",
     "no-const-assign": "error",
+    "no-constant-binary-expression": "error",
     "no-dupe-class-members": "error",
     "no-duplicate-imports": "off", // Use import/no-duplicates instead.
     "no-new-symbol": "error",
