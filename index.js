@@ -338,6 +338,7 @@ module.exports = {
 
     // Import -> Helpful warnings
     "import/export": "error",
+    "import/no-empty-named-blocks": "error",
     "import/no-named-as-default": "error",
     "import/no-named-as-default-member": "error",
     "import/no-deprecated": "off",
@@ -356,6 +357,7 @@ module.exports = {
     "import/no-import-module-exports": "error",
 
     // Import -> Style guide
+    "import/consistent-type-specifier-style": ["error", "prefer-inline"],
     "import/first": "error",
     "import/exports-last": "off",
     "import/no-duplicates": "error",
