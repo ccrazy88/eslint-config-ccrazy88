@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ccrazy88/eslint-config-ccrazy88.git"
+    "url": "git+https://github.com/ccrazy88/eslint-config-ccrazy88.git"
   },
   "scripts": {
     "prepare": "husky",
