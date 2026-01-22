@@ -22,13 +22,13 @@
     "*.json": "prettier --write"
   },
   "dependencies": {
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.5"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^8.53.1",
-    "eslint": "^9.39.2",
     "eslint-find-rules": "^5.0.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "globals": "^17.0.0",
@@ -39,9 +39,6 @@
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "8.x",
-    "eslint": "9.x",
-    "eslint-import-resolver-typescript": "4.x",
-    "eslint-plugin-import": "2.x",
-    "eslint-plugin-prettier": "5.x"
+    "eslint-import-resolver-typescript": "4.x"
   }
 }
